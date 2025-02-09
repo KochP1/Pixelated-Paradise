@@ -1,0 +1,152 @@
+.navbar {
+    background-image: url("images/banner.png") ;
+    background-size: cover;
+    background-position: center;
+	height: 80px;
+	background-color: #FF0000
+  }
+  .navbar-brand img {
+    max-height: 60px;
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #ccc !important;
+  }
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .slide-text{
+    background-color: #ff0000af;
+    
+  }
+  .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1) grayscale(100%) brightness(200%);
+    }
+  .nav-boton{
+    display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #fc2c00;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  }
+
+.navbar {
+            
+        }
+
+        #sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            background-color: #E31212;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        #sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #FFFFFF;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar a:hover {
+            color: black;
+        }
+
+        #sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #navbar-toggler-icon {
+            cursor: pointer;
+        }
+		
+        .navbar-brand {
+            margin-right: 50px; /* Añade más espacio entre el logo y las demás opciones */
+        }	  
+		.navbar-nav .nav-link {
+        color: #FFFFFF !important; /* Color del texto de las opciones de la barra de navegación */
+      }
+		  
+	.navbar-brand {
+        color: #FFFFFF !important; /* Cambiar el color del texto a blanco */
+     }
+		  
+	#navbar-toggler-icon {
+        color: #FFFFFF; /* Cambiar el color del icono a blanco */
+     }
+	
+	/* Estilos para los botones */
+    .btn {
+        border-radius: 20px !important; /* Hace los bordes más circulares */
+		 border-color: #fff !important;
+    }
+
+    /* Estilos para el botón de Buscar */
+    button.btn-buscar {
+        background-color: #FF0000 !important; /* Cambiar color de fondo a rojo */
+        color: #FFFFFF !important; /* Cambiar color del texto a blanco */
+    }
+
+    /* Estilos para el botón de Iniciar sesión */
+    button.btn-iniciar-sesion {
+        background-color: #FF0000 !important; /* Cambiar color de fondo a rojo */
+        color: #FFFFFF !important; /* Cambiar color del texto a blanco */
+    }
+   
+   
+.carrito {
+	position: relative;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+}
+
+   .carrito img{
+	   
+	   position: absolute;
+	   left: 5px;
+	   top: 3px;
+	   width: 90%;
+	   height: 90%;
+	   filter: invert(100%);
+	   
+	
+  }
+
+
+ 
+	
+	.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    }
+      .titulo {
+        color: #FF0000; /* Color de la barra de navegación */
+        text-align: center;
+        font-size: 4em; /* Tamaño grande del texto */
+        margin-top: 20px; /* Espacio superior */
+	    font-family: 'PixelArtFont', sans-serif;
+    }

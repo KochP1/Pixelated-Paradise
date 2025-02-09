@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/1ab6e17244.js" crossorigin="anonymous"></script>
+    <title>Nintendo</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+  	<!-- body code goes here -->
+	
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		
+  <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Pixelated Paradise!"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="openNav()">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nintendo.html">Nintendo</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="sega.html">Sega</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ps.html">PlayStation</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contácto</a>
+                </li>
+				
+				 
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+				<a class="btn nav-boton mr-2" id="darkModeToggle" role="button">
+                    <i class="fas mb-2 mr-1  fa-moon"></i>
+                  </a>
+                  <a href="Iniciar sesion.html" id="loginLink" class="btn btn-outline-success my-2 my-sm-0"
+                  type="button"
+                  style="background-color: #ff0000; color: #ffffff; display: block">
+                      Iniciar sesión
+                  </a>
+                  <div class="btn-group">
+                    <button
+                      id="userButton"
+                      class="btn btn-outline-success dropdown-toggle"
+                      type="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      style="display: none; background-color: #ff0000; color: #ffffff"
+                    >
+                      Cerrar sesión
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" id="logoutButton">Cerrar Sesión</button>
+                    </div>
+                  </div>
+				<div class="carrito" id="carrito">
+					
+					<i class="fa-solid fa-cart-shopping ml-2 mt-3">
+		               <div class="buy-car">
+			             <ul class="nav-car">
+				           <li>Imágen</li>
+				           <li>Nombre</li>
+				           <li>Precio</li>
+				           <li>Cantidad</li>
+							 
+			              </ul>
+                    <div class="listas_de_carrito">
+                  
+                    </div>
+							 
+			              <button class="btn-car" id="vaciar_carrito">Vaciar carrito</button>
+                          <a href="pay.html" class="pagar">Finalizar compra</a>
+						 
+						 
+		                </div>
+	                  </i>
+				</div>
+				
+            </form>
+        </div>
+    </nav>
+
+    <div class="gif">
+        <img src="images/Games/nintGif.gif" alt="gif Nintendo">
+      </div>
+
+    <div class="grid" id="lista-juegos">
+      <div class="items">
+          <img src="images/Games/Juegos de Nintendo/super-mario-64-ds (Small).png" class="ds">
+          <div class="info">
+              <h3>Super Mario 64</h3>
+              <div class="precio">
+                <p>$30</p>
+              </div>
+              <button class="agregar-carrito" data-id="14">Agregar al Carrito</button>
+          </div>
+      </div>
+      <div class="items">
+          <img src="images/Games/Juegos de Nintendo/Yoshi's_Island_2 Ds (Small).jpg" class="ds">
+          <div class="info">
+              <h3>Yoshi´s Island</h3>
+              <div class="precio">
+                  <p>$30</p>
+              </div>
+              <button class="agregar-carrito" data-id="15">Agregar al Carrito</button>
+          </div>
+      </div>
+      <div class="items">
+          <img src="images/Games/Juegos de Nintendo/Super smash bro N64 (Small).jpeg" class="ds">
+          <div class="info">
+              <h3>Super smash bros</h3>
+              <div class="precio">
+                  <p>$30</p>
+              </div>
+              <button class="agregar-carrito" data-id="16">Agregar al Carrito</button>
+          </div>
+      </div>
+      <div class="items">
+          <img src="images/Games/Juegos de Nintendo/Drown to life- Ds (Small).jpg" class="ds">
+          <div class="info">
+              <h3>Drown to life</h3>
+              <div class="precio">
+                  <p>$30</p>
+              </div>
+              <button class="agregar-carrito" data-id="17">Agregar al Carrito</button>
+          </div>
+      </div>
+      <div class="items">
+          <img src="images/Games/Juegos de Nintendo/DragonBall_Origins_Caratula (Small).jpeg" class="ds">
+          <div class="info">
+              <h3>Dragon ball</h3>
+              <div class="precio">
+                  <p>$30</p>
+              </div>
+              <button class="agregar-carrito" data-id="18">Agregar al Carrito</button>
+          </div>
+      </div>
+      <div class="items">
+          <img src="images/Games/Pokemon_Platinum.png" class="ds">
+          <div class="info">
+              <h3>Pokemon Platinum</h3>
+              <div class="precio">
+                  <p>$30</p>
+              </div>
+              <button class="agregar-carrito" data-id="19">Agregar al Carrito</button>
+          </div>
+      </div>
+      <div class="items">
+        <img src="images/Games/New_super_mario_bros_para_wii.webp">
+        <div class="info">
+            <h3>Super mario bros</h3>
+            <div class="precio">
+                <p>$40</p>
+            </div>
+            <button class="agregar-carrito" data-id="1">Agregar al Carrito</button>
+        </div>
+    </div>
+    <div class="items">
+      <img src="images/Games/zelda.jpg">
+      <div class="info">
+          <h3>Zelda</h3>
+          <div class="precio">
+              <p>$40</p>
+          </div>
+          <button class="agregar-carrito" data-id="20">Agregar al Carrito</button>
+      </div>
+  </div>
+  <div class="items">
+    <img src="images/Games/res4wii.jpg">
+    <div class="info">
+        <h3>Resident Evil 4</h3>
+        <div class="precio">
+            <p>$40</p>
+        </div>
+        <button class="agregar-carrito" data-id="21">Agregar al Carrito</button>
+    </div>
+</div>
+<div class="items">
+  <img src="images/Consoles/Dslite.png" class="ps2">
+  <div class="info">
+      <h3>Ds Lite</h3>
+      <div class="precio">
+        <p>$70</p>
+      </div>
+      <button class="agregar-carrito" data-id="22">Agregar al Carrito</button>
+  </div>
+</div>
+<div class="items">
+  <img src="images/Consoles/WII.png" class="ps2">
+  <div class="info">
+      <h3>Wii</h3>
+      <div class="precio">
+          <p>$300</p>
+      </div>
+      <button class="agregar-carrito" data-id="23">Agregar al Carrito</button>
+  </div>
+</div>
+<div class="items">
+  <img src="images/Consoles/NES-Console-Set.png" class="ps2">
+  <div class="info">
+      <h3>Nes</h3>
+      <div class="precio">
+          <p>$200</p>
+      </div>
+      <button class="agregar-carrito" data-id="24">Agregar al Carrito</button>
+  </div>
+</div>
+  </div>
+	  
+
+    <footer class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p>&copy; 2024 Pixelated Paradise. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="nosotros.html" class="text-white">Nosotros</a></li>
+                <li class="list-inline-item"><a href="contacto.html" class="text-white">Contacto</a></li>
+            </ul>
+      </div>
+  </footer>
+	  
+  <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+const currentUser = localStorage.getItem("currentUser");
+const logoutButton = document.getElementById("userButton");
+const loginButton = document.getElementById("loginLink");
+
+if (currentUser) {
+  logoutButton.style.display = "block"; // Mostrar el botón de cerrar sesión
+  logoutButton.innerHTML = JSON.parse(currentUser).name;
+  loginButton.style.display = "none"; // Ocultar el botón de iniciar sesión
+}
+
+});
+  </script>
+  <script src="js/auth.js"></script>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  </body>
+</html>

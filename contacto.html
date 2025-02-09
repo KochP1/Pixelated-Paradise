@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/1ab6e17244.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contacto</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+
+    <style>
+        .contenido {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-top: 0%;
+            
+        }
+
+        .contenido p {
+            flex: 1;
+            padding: 10px;
+            margin-left: 400px;
+            margin-top: 0%;
+            margin-bottom: 180px;
+            font-size: xx-large
+        }
+
+        .contenido img {
+            flex: 1;
+        }
+
+        .titulo-nosotros {
+            margin-top: 3%;
+            margin-left: 415px;
+            margin-bottom: 0%;
+        }
+
+        .imagen-juegos {
+        flex: 1;
+        margin-right: 200px;
+        margin-bottom: 180px;
+       }
+
+    .imagen-juegos > img {
+        border-radius: 25px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+     }
+
+    </style>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="carrito">
+      <a class="navbar-brand" href="index.html"
+        ><img src="images/logo.svg" alt="Pixelated Paradise!"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent1"
+        aria-controls="navbarSupportedContent1"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon" onclick="openNav()">&#9776;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Inicio <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nintendo.html">Nintendo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sega.html">Sega</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ps.html">PlayStation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contácto</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="btn nav-boton mr-2" id="darkModeToggle" role="button">
+            <i class="fas mb-2 mr-1 fa-moon"></i>
+          </a>
+
+          <a href="Iniciar sesion.html" id="loginLink" class="btn btn-outline-success my-2 my-sm-0"
+          type="button"
+          style="background-color: #ff0000; color: #ffffff; display: block">
+              Iniciar sesión
+          </a>
+          <div class="btn-group">
+            <button
+              id="userButton"
+              class="btn btn-outline-success dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="display: none; background-color: #ff0000; color: #ffffff"
+            >
+              Cerrar sesión
+            </button>
+            <div class="dropdown-menu">
+              <button class="dropdown-item" id="logoutButton">Cerrar Sesión</button>
+            </div>
+          </div>
+          <div class="carrito" id="carrito">
+            <i class="fa-solid fa-cart-shopping ml-2 mt-3">
+              <div class="buy-car">
+                <ul class="nav-car">
+                  <li>Imágen</li>
+                  <li>Nombre</li>
+                  <li>Precio</li>
+                  <li>Cantidad</li>
+                  <li></li>
+                </ul>
+
+                <div class="listas_de_carrito">
+                  
+                </div>
+                <button class="btn-car" id="vaciar_carrito">Vaciar carrito</button>
+                <a href="pay.html" class="pagar">Finalizar compra</a>
+              </div>
+            </i>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <h1 class="titulo-nosotros">Contacto</h1>
+
+    <div class="contenido">
+        <p>
+            <b>Correo electrónico</b><br>pixelatedParadise@gmail.com<br>
+            <b>Número de teléfono</b><br>04246881026<br>
+            <b>Dirección</b><br>Av 86a, Maracaibo, Zulia, 4005<br>
+        </p>
+
+        <div class="imagen-juegos">
+            <img src="images/map.png">
+    
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="bg-dark text-white text-center py-2">
+      <div class="container">
+        <p>&copy; 2024 Pixelated Paradise. Todos los derechos reservados.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="nosotros.html" class="text-white">Nosotros</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="contacto.html" class="text-white">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const currentUser = localStorage.getItem("currentUser");
+  const logoutButton = document.getElementById("userButton");
+  const loginButton = document.getElementById("loginLink");
+
+  if (currentUser) {
+    logoutButton.style.display = "block"; // Mostrar el botón de cerrar sesión
+    logoutButton.innerHTML = JSON.parse(currentUser).name;
+    loginButton.style.display = "none"; // Ocultar el botón de iniciar sesión
+  }
+
+});
+    </script>
+    <script src="js/auth.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

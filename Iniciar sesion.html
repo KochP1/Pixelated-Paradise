@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/1ab6e17244.js" crossorigin="anonymous"></script>
+    <title>Iniciar sesión</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+	  
+	  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+		
+  <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="Pixelated Paradise!"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" onclick="openNav()">&#9776;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nintendo.html">Nintendo</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="sega.html">Sega</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ps.html">PlayStation</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contácto</a>
+                </li>
+				
+				 
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <a class="btn nav-boton mr-2" id="darkModeToggle" role="button">
+                <i class="fas mb-2 mr-1 fa-moon"></i>
+              </a>
+                
+				<a href="Iniciar sesion.html">
+				<button class="btn btn-outline-success my-2 my-sm-0" type="button"  style="background-color: #FF0000; color: #FFFFFF;" >Iniciar sesión</button>
+				</a>
+				<div class="carrito" id="carrito">
+					
+					<i class="fa-solid fa-cart-shopping ml-2 mt-3">
+		               <div class="buy-car">
+			             <ul class="nav-car">
+				           <li>Imágen</li>
+				           <li>Nombre</li>
+				           <li>Precio</li>
+				           <li>Cantidad</li>
+							 
+		                 </ul>
+
+                     <div class="listas_de_carrito">
+                
+                     </div>
+							 
+                     <button class="btn-car" id="vaciar_carrito">Vaciar carrito</button>
+                     <a href="pay.html" class="pagar">Finalizar compra</a>
+						 
+						 
+	                </div>
+                  </i>
+				</div>
+				
+            </form>
+        </div>
+    </nav>
+	  
+	 <div class="caja" id="lista-juegos">
+		 
+	<form>
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Correo electrónico</label>
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresar correo">
+	    <small id="emailHelp1" class="form-text text-muted"></small> </div>
+	  <div class="form-group">
+	    <label for="exampleInputPassword1">Contraseña</label>
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+      </div>
+	  <button type="submit" class="btn-form" id="loginButton">Iniciar Sesion</button>
+    <div class="text-center mt-2">
+      
+      <a href="Registro.html">
+      <button type="button" class="btn-registrarte">Crear cuenta</button>
+      </a>
+      <small id="registerHelp1" class="text-muted ">¿No tienes una cuenta?</small>
+    </div>
+    
+    
+  </form>
+	  
+	  
+	  </div>
+	  
+
+	  
+	  
+	  
+<footer class="bg-dark text-white text-center py-2">
+  <div class="container">
+      <p>&copy; 2024 Pixelated Paradise. Todos los derechos reservados.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="nosotros.html" class="text-white">Nosotros</a></li>
+        <li class="list-inline-item"><a href="contacto.html" class="text-white">Contacto</a></li>
+      </ul>
+  </div>
+  </footer>
+	
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+	
+  <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/auth.js"></script>
+  </body>
+</html>
